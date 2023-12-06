@@ -86,12 +86,12 @@ void loop() {
   float distanceDifference = currentDistance - initialDistance;
   distanceDifference = round(distanceDifference);
 
-  Serial.print(-distanceDifference);
+  Serial.print(distanceDifference);
   Serial.print(",");
   Serial.print(yawAcc);
   Serial.print(",");
-  Serial.print(-rollAcc);
+  Serial.print(rollAcc);
   //Serial.print(",");
-  //Serial.print(pitchAcc+2);
+  //Serial.print(pitchAcc);
   Serial.println(" ");
 }
