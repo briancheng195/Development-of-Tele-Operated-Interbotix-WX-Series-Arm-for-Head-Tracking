@@ -10,7 +10,7 @@
 - Head Tracking Data is transmitted from Arduino to the Interbotix WX200 Robotic Arm
 
 # Data Transmission
-- With Arduino, the IMU sensor data are sent over the serial port to the computer (data transmission)
+- With Arduino, the IMU sensor data are sent over the serial port to the computer (ROS2 C++ node to read array of floats and create sensor_data_publisher)
 - Created a publisher node, sensor_data_publisher, which publishes the IMU data to the ROS2 topic, sensor_data
 - Created a subscriber node, sensor_data_subscriber, which subscribes to the sensor_data topic and used the services from the Interbotix libraries to process 
   the IMU data in controlling the movement of the robotic arm 
