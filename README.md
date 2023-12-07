@@ -1,4 +1,4 @@
-<img width="1548" alt="image" src="https://github.com/briancheng195/Development-of-Tele-Operated-Interbotix-WX-Series-Arm/assets/122734373/80a5e79a-5d68-4aa5-a3e0-ba395d63ff73"># Development-of-Tele-Operated-Interbotix-WX-Series-Arm
+# Development-of-Tele-Operated-Interbotix-WX-Series-Arm
 - Developed Python algorithms with ROS2 for tele-operation and manipulation of Interbotix X-Series Robotic Arm
 - This project is done up with ROS2 and the ROS2 library packages with the Interbotix WX Series Robotic Arm
 
