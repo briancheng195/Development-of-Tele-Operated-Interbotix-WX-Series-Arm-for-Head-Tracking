@@ -56,10 +56,7 @@ void loop() {
   /* Get new sensor events with the readings */
   sensors_event_t event;
   accel.getEvent(&event);
-  float pitchAcc = -atan2(event.acceleration.y, event.acceleration.z) * RAD_TO_DEG;
-  pitchAcc = constrain(pitchAcc, -90, 90);
-  pitchAcc = round(pitchAcc);
-  pitchAcc += 1;
+  float pitchAcc = atan2(event.acceleration.y, event.acceleration.z) * RAD_TO_DEG;
 
   sensors_event_t magEvent;
   mag.getEvent(&magEvent);
@@ -69,15 +66,8 @@ void loop() {
     heading += 2 * PI;
   }
   float yawAcc = (heading - yawOffset) * RAD_TO_DEG;
-  // Map yaw values if they are more than 300
-  if (yawAcc > 300) {
-    yawAcc = map(yawAcc, 360, 300, -40, -90);
-  }
-  yawAcc = round(yawAcc);
-
-  float rollAcc = event.acceleration.x;
-  rollAcc = map(rollAcc, -10, 10, -90, 90);
-  rollAcc = round(rollAcc);
+  
+  float rollAcc = atan2(event.acceleration.x, event.acceleration.z) * RAD_TO_DEG;
 
   // Measure the current distance
   float currentDistance = measureDistance();
@@ -88,10 +78,10 @@ void loop() {
 
   Serial.print(distanceDifference);
   Serial.print(",");
+  Serial.print(pitchAcc);
+  Serial.print(",");
   Serial.print(yawAcc);
   Serial.print(",");
   Serial.print(rollAcc);
-  //Serial.print(",");
-  //Serial.print(pitchAcc);
   Serial.println(" ");
 }
