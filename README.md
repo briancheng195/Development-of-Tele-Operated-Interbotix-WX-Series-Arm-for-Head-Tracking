@@ -1,4 +1,4 @@
-# Development-of-Tele-Operated-Interbotix-WX-Series-Arm
+# Development-of-Tele-Operated-Interbotix-WX-Series-Arm for Head Tracking
 - Developed Python algorithms with ROS2 for tele-operation and manipulation of Interbotix X-Series Robotic Arm
 - This project is done up with ROS2 and the ROS2 library packages with the Interbotix WX Series Robotic Arm
 
