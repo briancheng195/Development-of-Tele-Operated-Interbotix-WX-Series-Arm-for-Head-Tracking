@@ -10,7 +10,8 @@
 - Head Tracking Data is transmitted from Arduino to the Interbotix WX200 Robotic Arm
 - This approach was inspired by the humanoid design of Team NimbRo, the winner of the ANA Avatar XPrize Competition in 2021. Their design was to incorporate a 5-DOF robotic arm to 
   act as the neck of the robot’s head, so as to accurately control the head movements of the humanoid (http://nimbro.net/AVATAR/).
-  <img width="400" alt="image" src="https://github.com/briancheng195/Development-of-Tele-Operated-Interbotix-WX-Series-Arm-for-Head-Tracking/assets/122734373/8e224312-aeeb-42ca-9029-bbd2ea7da359">
+
+<img width="400" alt="image" src="https://github.com/briancheng195/Development-of-Tele-Operated-Interbotix-WX-Series-Arm-for-Head-Tracking/assets/122734373/8e224312-aeeb-42ca-9029-bbd2ea7da359">
 
 # Proof of Concept 
 <img width="550" alt="image" src="https://github.com/briancheng195/Development-of-Tele-Operated-Interbotix-WX-Series-Arm-for-Head-Tracking/assets/122734373/19343372-8528-4a1c-a1c0-de3573d1b646">
